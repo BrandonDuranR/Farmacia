@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Mockups;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,21 +39,11 @@ namespace Farmacia
         {
 
         }
-        public DataTable llenarTabla()
-        {
-            con.Open();
-            DataTable dt = new DataTable();
-            string llenar = ("SELECT * FROM `almacen`");
-            MySqlCommand cmd = new MySqlCommand(llenar, con);
-            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
-            dataAdapter.Fill(dt);
-            con.Close();
-            return dt;
-        }
+       
 
         private void panelAmlacen_Load_1(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = llenarTabla();
+           
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,8 +71,25 @@ namespace Farmacia
 
         private void registrarMedicamentoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            AgregarMedicamento medicamento = new AgregarMedicamento();
-            medicamento.Show();
+           
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Producto producto = new Producto();
+            producto.Show();
             this.Close();
         }
     }

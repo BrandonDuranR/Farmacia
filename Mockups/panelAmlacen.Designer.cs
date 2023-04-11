@@ -28,144 +28,147 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            button2 = new Button();
-            panel1 = new Panel();
-            label14 = new Label();
-            label3 = new Label();
-            button3 = new Button();
-            btnLogOut = new Button();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // button1
             // 
-            button1.BackgroundImage = Properties.Resources.registrarLote;
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(80, 150);
-            button1.Margin = new Padding(4, 4, 4, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(107, 100);
-            button1.TabIndex = 4;
-            button1.UseVisualStyleBackColor = true;
+            this.button1.BackgroundImage = global::Farmacia.Properties.Resources.registrarLote;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(80, 150);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(107, 100);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(80, 254);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(107, 18);
-            label1.TabIndex = 5;
-            label1.Text = "Registrar Lote";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(80, 254);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 18);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Registrar Lote";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(262, 254);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(139, 18);
-            label2.TabIndex = 7;
-            label2.Text = "Registrar Producto";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(262, 254);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 18);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Registrar Producto";
             // 
             // button2
             // 
-            button2.BackgroundImage = Properties.Resources.registrarMed;
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(279, 150);
-            button2.Margin = new Padding(4);
-            button2.Name = "button2";
-            button2.Size = new Size(107, 100);
-            button2.TabIndex = 6;
-            button2.UseVisualStyleBackColor = true;
+            this.button2.BackgroundImage = global::Farmacia.Properties.Resources.registrarMed;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(279, 150);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 100);
+            this.button2.TabIndex = 6;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
-            panel1.Controls.Add(btnLogOut);
-            panel1.Controls.Add(label14);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(674, 89);
-            panel1.TabIndex = 59;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label14.ForeColor = Color.White;
-            label14.Location = new Point(262, 31);
-            label14.Name = "label14";
-            label14.Size = new Size(166, 25);
-            label14.TabIndex = 1;
-            label14.Text = "Panel Almacen";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(478, 254);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(105, 18);
-            label3.TabIndex = 61;
-            label3.Text = "Mostrar Stock";
-            // 
-            // button3
-            // 
-            button3.BackgroundImage = Properties.Resources.vista;
-            button3.BackgroundImageLayout = ImageLayout.Stretch;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(478, 150);
-            button3.Margin = new Padding(4);
-            button3.Name = "button3";
-            button3.Size = new Size(107, 100);
-            button3.TabIndex = 60;
-            button3.UseVisualStyleBackColor = true;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.Controls.Add(this.btnLogOut);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(674, 89);
+            this.panel1.TabIndex = 59;
             // 
             // btnLogOut
             // 
-            btnLogOut.BackColor = Color.Transparent;
-            btnLogOut.BackgroundImage = Properties.Resources.log_out;
-            btnLogOut.BackgroundImageLayout = ImageLayout.Stretch;
-            btnLogOut.FlatStyle = FlatStyle.Popup;
-            btnLogOut.Location = new Point(605, 10);
-            btnLogOut.Margin = new Padding(4);
-            btnLogOut.Name = "btnLogOut";
-            btnLogOut.Size = new Size(65, 72);
-            btnLogOut.TabIndex = 62;
-            btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogOut.BackgroundImage = global::Farmacia.Properties.Resources.log_out;
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogOut.Location = new System.Drawing.Point(605, 10);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(65, 72);
+            this.btnLogOut.TabIndex = 62;
+            this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(262, 31);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(166, 25);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Panel Almacen";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(478, 254);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 18);
+            this.label3.TabIndex = 61;
+            this.label3.Text = "Mostrar Stock";
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::Farmacia.Properties.Resources.vista;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(478, 150);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(107, 100);
+            this.button3.TabIndex = 60;
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // panelAmlacen
             // 
-            AutoScaleDimensions = new SizeF(9F, 18F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(220, 237, 244);
-            ClientSize = new Size(674, 305);
-            Controls.Add(label3);
-            Controls.Add(button3);
-            Controls.Add(panel1);
-            Controls.Add(label2);
-            Controls.Add(button2);
-            Controls.Add(label1);
-            Controls.Add(button1);
-            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
-            MaximizeBox = false;
-            Name = "panelAmlacen";
-            ShowIcon = false;
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "pane lAmlacen";
-            Load += panelAmlacen_Load_1;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(237)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(674, 305);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.Name = "panelAmlacen";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "pane lAmlacen";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
