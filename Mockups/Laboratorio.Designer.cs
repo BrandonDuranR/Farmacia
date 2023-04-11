@@ -28,96 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnCancelar = new Button();
-            btnRegistrar = new Button();
-            txtNombreLab = new TextBox();
-            label2 = new Label();
-            panel1 = new Panel();
-            label1 = new Label();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.txtNombreLab = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // btnCancelar
             // 
-            btnCancelar.FlatStyle = FlatStyle.Popup;
-            btnCancelar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnCancelar.Location = new Point(243, 200);
-            btnCancelar.Margin = new Padding(4);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(125, 31);
-            btnCancelar.TabIndex = 60;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(243, 200);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(125, 31);
+            this.btnCancelar.TabIndex = 60;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnRegistrar
             // 
-            btnRegistrar.FlatStyle = FlatStyle.Popup;
-            btnRegistrar.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnRegistrar.Location = new Point(94, 200);
-            btnRegistrar.Margin = new Padding(4);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(125, 31);
-            btnRegistrar.TabIndex = 59;
-            btnRegistrar.Text = "Registrar";
-            btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistrar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRegistrar.Location = new System.Drawing.Point(94, 200);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(125, 31);
+            this.btnRegistrar.TabIndex = 59;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // txtNombreLab
             // 
-            txtNombreLab.Location = new Point(94, 136);
-            txtNombreLab.Name = "txtNombreLab";
-            txtNombreLab.Size = new Size(274, 23);
-            txtNombreLab.TabIndex = 58;
+            this.txtNombreLab.Location = new System.Drawing.Point(94, 136);
+            this.txtNombreLab.Name = "txtNombreLab";
+            this.txtNombreLab.Size = new System.Drawing.Size(274, 23);
+            this.txtNombreLab.TabIndex = 58;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(135, 97);
-            label2.Name = "label2";
-            label2.Size = new Size(209, 18);
-            label2.TabIndex = 57;
-            label2.Text = "Nombre de Laboratorio :";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(135, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(209, 18);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "Nombre de Laboratorio :";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
-            panel1.Controls.Add(label1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(474, 57);
-            panel1.TabIndex = 56;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(474, 57);
+            this.panel1.TabIndex = 56;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(68, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(320, 25);
-            label1.TabIndex = 0;
-            label1.Text = "REGISTRO DE LABORATORIO";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(68, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(320, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "REGISTRO DE LABORATORIO";
             // 
             // Laboratorio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(474, 284);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnRegistrar);
-            Controls.Add(txtNombreLab);
-            Controls.Add(label2);
-            Controls.Add(panel1);
-            MaximizeBox = false;
-            Name = "Laboratorio";
-            ShowIcon = false;
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Laboratorio";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(474, 284);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.txtNombreLab);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
+            this.Name = "Laboratorio";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Laboratorio";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

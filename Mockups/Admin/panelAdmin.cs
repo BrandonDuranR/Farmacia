@@ -78,9 +78,7 @@ namespace Mockups
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
-            this.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -94,6 +92,41 @@ namespace Mockups
         {
             Eliminar eliminar = new Eliminar();
             eliminar.Show();
+            this.Close();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Laboratorio laboratorio = new Laboratorio();
+            laboratorio.Show();
+            this.Close();
+        }
+
+        private void btnLogOut_Click_1(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Eliminar eliminar = new Eliminar();
+            eliminar.Show();
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            EditarUsuario editar = new EditarUsuario();
+            editar.Show();
+            this.Close();
+        }
+
+        private void btnUsuario_Click_1(object sender, EventArgs e)
+        {
+            RegistroUser registro = new RegistroUser();
+            registro.Show();
             this.Close();
         }
     }

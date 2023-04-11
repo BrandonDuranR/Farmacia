@@ -28,96 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            label4 = new Label();
-            btnCancelar = new Button();
-            dataGridView1 = new DataGridView();
-            ID_Producto = new DataGridViewTextBoxColumn();
-            Stock = new DataGridViewTextBoxColumn();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
-            panel1.Controls.Add(label4);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(5, 5, 5, 5);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(527, 84);
-            panel1.TabIndex = 34;
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(527, 84);
+            this.panel1.TabIndex = 34;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(196, 30);
-            label4.Margin = new Padding(5, 0, 5, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(158, 25);
-            label4.TabIndex = 1;
-            label4.Text = "Mostrar Stock";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(196, 30);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(158, 25);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Mostrar Stock";
             // 
             // btnCancelar
             // 
-            btnCancelar.FlatStyle = FlatStyle.Popup;
-            btnCancelar.ForeColor = Color.Black;
-            btnCancelar.Location = new Point(352, 444);
-            btnCancelar.Margin = new Padding(4, 4, 4, 4);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(161, 37);
-            btnCancelar.TabIndex = 42;
-            btnCancelar.Text = "ATRAS";
-            btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.Location = new System.Drawing.Point(352, 444);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(161, 37);
+            this.btnCancelar.TabIndex = 42;
+            this.btnCancelar.Text = "ATRAS";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = Color.FromArgb(220, 237, 244);
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID_Producto, Stock });
-            dataGridView1.Location = new Point(12, 92);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(333, 389);
-            dataGridView1.TabIndex = 43;
-            // 
-            // ID_Producto
-            // 
-            ID_Producto.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            ID_Producto.HeaderText = "Nombre";
-            ID_Producto.Name = "ID_Producto";
-            ID_Producto.ReadOnly = true;
-            // 
-            // Stock
-            // 
-            Stock.HeaderText = "Stock";
-            Stock.Name = "Stock";
-            Stock.ReadOnly = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(237)))), ((int)(((byte)(244)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 92);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(333, 389);
+            this.dataGridView1.TabIndex = 43;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MostrarStrock
             // 
-            AutoScaleDimensions = new SizeF(9F, 18F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(220, 237, 244);
-            ClientSize = new Size(527, 494);
-            Controls.Add(dataGridView1);
-            Controls.Add(btnCancelar);
-            Controls.Add(panel1);
-            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
-            MaximizeBox = false;
-            Name = "MostrarStrock";
-            ShowIcon = false;
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Mostrar Stock";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(237)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(527, 494);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.Name = "MostrarStrock";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Mostrar Stock";
+            this.Load += new System.EventHandler(this.MostrarStrock_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -126,7 +117,5 @@
         private Label label4;
         private Button btnCancelar;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn ID_Producto;
-        private DataGridViewTextBoxColumn Stock;
     }
 }

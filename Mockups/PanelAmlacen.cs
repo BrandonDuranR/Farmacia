@@ -86,10 +86,33 @@ namespace Farmacia
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+
+        private void button2_Click_1(object sender, EventArgs e)
         {
             Producto producto = new Producto();
             producto.Show();
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            RegistrarLote registrarLote = new RegistrarLote();
+            registrarLote.Show();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MostrarStrock mostrarStrock = new MostrarStrock();
+            mostrarStrock.Show();
+            this.Close();
+        }
+
+        private void btnLogOut_Click_1(object sender, EventArgs e)
+        {
+            Login login1 = new Login();
+            login1.Show();
             this.Close();
         }
     }
