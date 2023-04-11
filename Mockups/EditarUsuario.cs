@@ -1,4 +1,5 @@
 ﻿using Mockups;
+using Mockups.Properties;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -126,17 +127,13 @@ namespace Farmacia
             string actualizar = "UPDATE `usuario` SET NOMBRE = @NOMBRE, APELLIDO_P = @APELLIDO_P, APELLIDO_M = @APELLIDO_M, TELEFONO = @TELEFONO, EMAIL = @EMAIL, CP = @CP, DIRECCION = @DIRECCION, USUARIO = @USUARIO, CONTRASENA = @CONTRASENA, ROL = @ROL WHERE IDUSER = @idUser";
             MySqlCommand cmd = new MySqlCommand(actualizar, con);
 
-            if (string.IsNullOrEmpty(tbNombre.Text) || string.IsNullOrEmpty(tbAP.Text) || string.IsNullOrEmpty(tbAM.Text) || string.IsNullOrEmpty(tbTelefono.Text) || string.IsNullOrEmpty(tbCE.Text) || string.IsNullOrEmpty(tbCP.Text) || string.IsNullOrEmpty(tbUsuario.Text) || string.IsNullOrEmpty(tbPass.Text) || string.IsNullOrEmpty(tbPass2.Text))
+            if (string.IsNullOrEmpty(tbNombre.Text) || string.IsNullOrEmpty(tbAP.Text) || string.IsNullOrEmpty(tbAM.Text) || string.IsNullOrEmpty(tbTelefono.Text) || string.IsNullOrEmpty(tbCE.Text) || string.IsNullOrEmpty(tbCP.Text) || string.IsNullOrEmpty(tbUsuario.Text) || string.IsNullOrEmpty(tbPass.Text))
             {
                 MessageBox.Show("1 o mas campos no han sido llenados");
                 con.Close();
             }
-            else if (tbPass.Text != tbPass2.Text)
-            {
-                MessageBox.Show("Las contraseñas no coinciden");
-                con.Close();
-            }
-            else if (tbPass.Text == tbPass2.Text)
+           
+            else 
             {
 
                 cmd.Parameters.AddWithValue("@idUser", idUser);
@@ -161,6 +158,27 @@ namespace Farmacia
             con.Close();
         }
 
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroUser registro = new RegistroUser();
+            registro.Show();
+            this.Close();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Eliminar eliminar = new Eliminar();
+            eliminar.Show();
+            this.Close();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            PanelAdmin panel = new PanelAdmin();
+            panel.Show();
+            this.Hide();
+            con.Close();
+        }
     }
 }
 

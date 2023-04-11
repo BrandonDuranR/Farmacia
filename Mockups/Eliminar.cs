@@ -1,4 +1,5 @@
 ﻿using Mockups;
+using Mockups.Properties;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -79,6 +80,20 @@ namespace Farmacia
         {
             PanelAdmin panel = new PanelAdmin();
             panel.Show();
+            this.Close();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroUser registro = new RegistroUser();
+            registro.Show();
+            this.Close();
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditarUsuario editar = new EditarUsuario();
+            editar.Show();
             this.Close();
         }
     }

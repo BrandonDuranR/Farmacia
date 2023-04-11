@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Farmacia;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -81,6 +82,33 @@ namespace Mockups.Properties
         }
 
         private void RegistroUser_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            PanelAdmin panel = new PanelAdmin();
+            panel.Show();
+            this.Hide();
+            con.Close();    
+        }
+
+        private void editarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditarUsuario editar = new EditarUsuario();
+            editar.Show();
+            this.Close();
+        }
+
+        private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Eliminar eliminar = new Eliminar();
+            eliminar.Show();
+            this.Close();
+        }
+
+        private void RegistroUser_Load_1(object sender, EventArgs e)
         {
 
         }

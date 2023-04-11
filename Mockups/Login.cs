@@ -18,13 +18,22 @@ namespace Mockups
         {
 
         }
-        static string conexion = ("SERVER = 127.0.0.1;PORT=3306;DATABASE=farmacia;UID=root;PASSWORD=;");
+        static string conexion = ("SERVER = 127.0.0.1;PORT=3306;DATABASE=farmacia;UID=root;PASSWORD=");
         MySqlConnection con = new MySqlConnection(conexion);
         private void button1_Click(object sender, EventArgs e)
         {
 
-            try
-            {
+           
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
                 con.Open();
                 string usuarioAdmin = ("SELECT ROL FROM `usuario` WHERE USUARIO='" + tbUser.Text + "' AND CONTRASENA='" + tbPass.Text + "';");
                 MySqlCommand cmd = new MySqlCommand(usuarioAdmin, con);
@@ -54,11 +63,13 @@ namespace Mockups
                     }
 
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Usuario o contraseña invalida");
-            }
+                else
+                {
+                    MessageBox.Show("USUARIO O CONTRASEÑA INCORRECTA");
+                con.Close();
+                }
+            
+            
 
         }
     }
