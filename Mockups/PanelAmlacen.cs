@@ -36,7 +36,7 @@ namespace Farmacia
 
         private void panelAmlacen_Load(object sender, EventArgs e)
         {
-           
+
         }
         public DataTable llenarTabla()
         {

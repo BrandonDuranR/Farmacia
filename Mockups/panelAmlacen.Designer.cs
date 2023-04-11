@@ -28,94 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.agregarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarLoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarMedicamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            button1 = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            button2 = new Button();
+            panel1 = new Panel();
+            label14 = new Label();
+            label3 = new Label();
+            button3 = new Button();
+            btnLogOut = new Button();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
-            // dataGridView1
+            // button1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(594, 264);
-            this.dataGridView1.TabIndex = 2;
+            button1.BackgroundImage = Properties.Resources.registrarLote;
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(80, 150);
+            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 100);
+            button1.TabIndex = 4;
+            button1.UseVisualStyleBackColor = true;
             // 
-            // menuStrip1
+            // label1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarUsuarioToolStripMenuItem,
-            this.cerrarSesionToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(623, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            label1.AutoSize = true;
+            label1.Location = new Point(80, 254);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(107, 18);
+            label1.TabIndex = 5;
+            label1.Text = "Registrar Lote";
             // 
-            // agregarUsuarioToolStripMenuItem
+            // label2
             // 
-            this.agregarUsuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarLoteToolStripMenuItem,
-            this.registrarMedicamentoToolStripMenuItem});
-            this.agregarUsuarioToolStripMenuItem.Name = "agregarUsuarioToolStripMenuItem";
-            this.agregarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
-            this.agregarUsuarioToolStripMenuItem.Text = "Administracion";
-            this.agregarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.agregarUsuarioToolStripMenuItem_Click_1);
+            label2.AutoSize = true;
+            label2.Location = new Point(262, 254);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(139, 18);
+            label2.TabIndex = 7;
+            label2.Text = "Registrar Producto";
             // 
-            // registrarLoteToolStripMenuItem
+            // button2
             // 
-            this.registrarLoteToolStripMenuItem.Name = "registrarLoteToolStripMenuItem";
-            this.registrarLoteToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.registrarLoteToolStripMenuItem.Text = "Registrar Lote";
-            this.registrarLoteToolStripMenuItem.Click += new System.EventHandler(this.registrarLoteToolStripMenuItem_Click);
+            button2.BackgroundImage = Properties.Resources.registrarMed;
+            button2.BackgroundImageLayout = ImageLayout.Stretch;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(279, 150);
+            button2.Margin = new Padding(4);
+            button2.Name = "button2";
+            button2.Size = new Size(107, 100);
+            button2.TabIndex = 6;
+            button2.UseVisualStyleBackColor = true;
             // 
-            // registrarMedicamentoToolStripMenuItem
+            // panel1
             // 
-            this.registrarMedicamentoToolStripMenuItem.Name = "registrarMedicamentoToolStripMenuItem";
-            this.registrarMedicamentoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.registrarMedicamentoToolStripMenuItem.Text = "Registrar Medicamento";
-            this.registrarMedicamentoToolStripMenuItem.Click += new System.EventHandler(this.registrarMedicamentoToolStripMenuItem_Click_1);
+            panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(btnLogOut);
+            panel1.Controls.Add(label14);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(674, 89);
+            panel1.TabIndex = 59;
             // 
-            // cerrarSesionToolStripMenuItem
+            // label14
             // 
-            this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.cerrarSesionToolStripMenuItem.Text = "Cerrar sesion";
+            label14.AutoSize = true;
+            label14.Font = new Font("Verdana", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(262, 31);
+            label14.Name = "label14";
+            label14.Size = new Size(166, 25);
+            label14.TabIndex = 1;
+            label14.Text = "Panel Almacen";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(478, 254);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(105, 18);
+            label3.TabIndex = 61;
+            label3.Text = "Mostrar Stock";
+            // 
+            // button3
+            // 
+            button3.BackgroundImage = Properties.Resources.vista;
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Location = new Point(478, 150);
+            button3.Margin = new Padding(4);
+            button3.Name = "button3";
+            button3.Size = new Size(107, 100);
+            button3.TabIndex = 60;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // btnLogOut
+            // 
+            btnLogOut.BackColor = Color.Transparent;
+            btnLogOut.BackgroundImage = Properties.Resources.log_out;
+            btnLogOut.BackgroundImageLayout = ImageLayout.Stretch;
+            btnLogOut.FlatStyle = FlatStyle.Popup;
+            btnLogOut.Location = new Point(605, 10);
+            btnLogOut.Margin = new Padding(4);
+            btnLogOut.Name = "btnLogOut";
+            btnLogOut.Size = new Size(65, 72);
+            btnLogOut.TabIndex = 62;
+            btnLogOut.UseVisualStyleBackColor = false;
             // 
             // panelAmlacen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 317);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
-            this.Name = "panelAmlacen";
-            this.Text = "panelAmlacen";
-            this.Load += new System.EventHandler(this.panelAmlacen_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 18F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(220, 237, 244);
+            ClientSize = new Size(674, 305);
+            Controls.Add(label3);
+            Controls.Add(button3);
+            Controls.Add(panel1);
+            Controls.Add(label2);
+            Controls.Add(button2);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(4, 4, 4, 4);
+            MaximizeBox = false;
+            Name = "panelAmlacen";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "pane lAmlacen";
+            Load += panelAmlacen_Load_1;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem agregarUsuarioToolStripMenuItem;
-        private ToolStripMenuItem cerrarSesionToolStripMenuItem;
-        private ToolStripMenuItem registrarLoteToolStripMenuItem;
-        private ToolStripMenuItem registrarMedicamentoToolStripMenuItem;
+        private Button button1;
+        private Label label1;
+        private Label label2;
+        private Button button2;
+        private Panel panel1;
+        private Label label14;
+        private Label label3;
+        private Button button3;
+        private Button btnLogOut;
     }
 }
