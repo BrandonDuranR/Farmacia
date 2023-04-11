@@ -57,12 +57,14 @@ namespace Farmacia
         }
         public  void eliminarRegistro()
         {
-            string query = "DELETE FROM usuario WHERE IDUSER = @iduser";
+            string query = "DELETE FROM usuario WHERE IDUSER = @iduser && NOMBRE = @nombre";
             MySqlCommand cmd = new MySqlCommand(query, con);
             cmd.Parameters.AddWithValue("@iduser", textBox1.Text);
+            cmd.Parameters.AddWithValue("@nombre",tbBusqueda.Text);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+            
         }
 
         private void Eliminar_Load(object sender, EventArgs e) //Mostrar la tabla
