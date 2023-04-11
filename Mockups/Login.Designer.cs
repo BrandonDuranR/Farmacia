@@ -29,114 +29,131 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.tbUser = new System.Windows.Forms.TextBox();
-            this.tbPass = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            tbUser = new TextBox();
+            tbPass = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            btnLogin = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // tbUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(334, 111);
-            this.tbUser.Margin = new System.Windows.Forms.Padding(4);
-            this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(199, 26);
-            this.tbUser.TabIndex = 0;
-            this.tbUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            tbUser.Location = new Point(334, 110);
+            tbUser.Margin = new Padding(4);
+            tbUser.Name = "tbUser";
+            tbUser.Size = new Size(199, 26);
+            tbUser.TabIndex = 0;
+            tbUser.TextAlign = HorizontalAlignment.Center;
             // 
             // tbPass
             // 
-            this.tbPass.Location = new System.Drawing.Point(334, 181);
-            this.tbPass.Margin = new System.Windows.Forms.Padding(4);
-            this.tbPass.Name = "tbPass";
-            this.tbPass.PasswordChar = '*';
-            this.tbPass.Size = new System.Drawing.Size(199, 26);
-            this.tbPass.TabIndex = 1;
-            this.tbPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(361, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 18);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Iniciar de Sesión";
+            tbPass.Location = new Point(334, 180);
+            tbPass.Margin = new Padding(4);
+            tbPass.Name = "tbPass";
+            tbPass.PasswordChar = '*';
+            tbPass.Size = new Size(199, 26);
+            tbPass.TabIndex = 1;
+            tbPass.TextAlign = HorizontalAlignment.Center;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(334, 89);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Usuario:";
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(395, 88);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(77, 18);
+            label2.TabIndex = 3;
+            label2.Text = "Usuario:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(334, 159);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 18);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Contraseña:";
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(379, 158);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(108, 18);
+            label3.TabIndex = 4;
+            label3.Text = "Contraseña:";
             // 
             // btnLogin
             // 
-            this.btnLogin.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.Location = new System.Drawing.Point(423, 254);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(129, 28);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "Ingresar";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            btnLogin.BackColor = Color.FromArgb(220, 237, 244);
+            btnLogin.FlatStyle = FlatStyle.Popup;
+            btnLogin.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogin.Location = new Point(369, 242);
+            btnLogin.Margin = new Padding(4);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(129, 40);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "Ingresar";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(565, 60);
+            panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Verdana", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(210, 21);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(152, 18);
+            label1.TabIndex = 7;
+            label1.Text = "Iniciar de Sesión";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(565, 295);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbPass);
-            this.Controls.Add(this.tbUser);
-            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
-            this.Name = "Login";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Inicio Sesión";
-            this.Load += new System.EventHandler(this.Login_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(9F, 18F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(565, 295);
+            Controls.Add(panel1);
+            Controls.Add(btnLogin);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(tbPass);
+            Controls.Add(tbUser);
+            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(4);
+            MaximizeBox = false;
+            Name = "Login";
+            ShowIcon = false;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Inicio Sesión";
+            Load += Login_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private TextBox tbUser;
         private TextBox tbPass;
-        private Label label1;
         private Label label2;
         private Label label3;
         private Button btnLogin;
+        private Panel panel1;
+        private Label label1;
     }
 }

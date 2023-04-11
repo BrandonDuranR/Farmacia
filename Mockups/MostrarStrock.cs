@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Farmacia
 {
-    public partial class Ventas : Form
+    public partial class MostrarStrock : Form
     {
-        public Ventas()
+        public MostrarStrock()
         {
             InitializeComponent();
-        }
-
-        private void Ventas_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

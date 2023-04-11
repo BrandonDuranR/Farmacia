@@ -11,7 +11,7 @@ namespace Mockups
         MySqlDataReader something;
         public Login()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,7 +23,7 @@ namespace Mockups
         private void button1_Click(object sender, EventArgs e)
         {
 
-           
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -33,43 +33,43 @@ namespace Mockups
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-                con.Open();
-                string usuarioAdmin = ("SELECT ROL FROM `usuario` WHERE USUARIO='" + tbUser.Text + "' AND CONTRASENA='" + tbPass.Text + "';");
-                MySqlCommand cmd = new MySqlCommand(usuarioAdmin, con);
-                something = cmd.ExecuteReader();
-                if (something.Read())
-                {
-                    string rol = something.GetString(0);
-                    if (rol == "ADMIN")
-                    {
-                        PanelAdmin panel = new PanelAdmin();
-                        panel.Show();
-                        this.Hide();
-                        con.Close();
 
-                    }
-                    else if (rol == "ALMACEN")
-                    {
-                        panelAmlacen almace = new panelAmlacen();
-                        almace.Show();
-                        this.Hide();
-                        con.Close();
-                    }
-                    else if (rol == "VENTAS")
-                    {
-                        MessageBox.Show("Accediste como alguien de ventas");
-                        con.Close();
-                    }
+            con.Open();
+            string usuarioAdmin = ("SELECT ROL FROM `usuario` WHERE USUARIO='" + tbUser.Text + "' AND CONTRASENA='" + tbPass.Text + "';");
+            MySqlCommand cmd = new MySqlCommand(usuarioAdmin, con);
+            something = cmd.ExecuteReader();
+            if (something.Read())
+            {
+                string rol = something.GetString(0);
+                if (rol == "ADMIN")
+                {
+                    PanelAdmin panel = new PanelAdmin();
+                    panel.Show();
+                    this.Hide();
+                    con.Close();
 
                 }
-                else
+                else if (rol == "ALMACEN")
                 {
-                    MessageBox.Show("USUARIO O CONTRASEÑA INCORRECTA");
+                    panelAmlacen almace = new panelAmlacen();
+                    almace.Show();
+                    this.Hide();
+                    con.Close();
+                }
+                else if (rol == "VENTAS")
+                {
+                    MessageBox.Show("Accediste como alguien de ventas");
+                    con.Close();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("USUARIO O CONTRASEÑA INCORRECTA");
                 con.Close();
-                }
-            
-            
+            }
+
+
 
         }
     }

@@ -78,7 +78,7 @@ namespace Mockups
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Login login= new Login();
+            Login login = new Login();
             login.Show();
             this.Close();
         }

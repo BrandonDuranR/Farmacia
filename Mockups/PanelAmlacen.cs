@@ -39,11 +39,11 @@ namespace Farmacia
         {
 
         }
-       
+
 
         private void panelAmlacen_Load_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void eliminarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -71,7 +71,7 @@ namespace Farmacia
 
         private void registrarMedicamentoToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

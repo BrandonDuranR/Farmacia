@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Farmacia
 {
-    public partial class RegistrarLote : Form
+    public partial class Laboratorio : Form
     {
-        public RegistrarLote()
+        public Laboratorio()
         {
             InitializeComponent();
         }
