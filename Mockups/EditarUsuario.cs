@@ -179,6 +179,11 @@ namespace Farmacia
             this.Hide();
             con.Close();
         }
+
+        private void EditarUsuario_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

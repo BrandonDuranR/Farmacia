@@ -72,6 +72,7 @@
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
@@ -398,6 +399,8 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Usuario";
+            this.Load += new System.EventHandler(this.EditarUsuario_Load_1);
+            this.Load += new System.EventHandler(this.EditarUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

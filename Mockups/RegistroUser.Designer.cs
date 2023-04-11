@@ -196,6 +196,7 @@
             this.tbNumero.Name = "tbNumero";
             this.tbNumero.Size = new System.Drawing.Size(165, 23);
             this.tbNumero.TabIndex = 18;
+            this.tbNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNumero_KeyPress);
             // 
             // tbAP
             // 
@@ -225,6 +226,8 @@
             this.tbCP.Name = "tbCP";
             this.tbCP.Size = new System.Drawing.Size(165, 23);
             this.tbCP.TabIndex = 22;
+            this.tbCP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCP_KeyPress);
+
             // 
             // tbDireccion
             // 
@@ -275,6 +278,7 @@
             this.button1.TabIndex = 28;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -286,6 +290,8 @@
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+
             // 
             // panel1
             // 
